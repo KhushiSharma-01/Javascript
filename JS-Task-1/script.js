@@ -11,3 +11,10 @@ for(let i=0;i<Task2.length;i++){
     Task2[i].style.color="purple";
 }
 console.log(Task2);
+
+const content=document.getElementById('content');
+const Task3 =content.querySelectorAll('#content p');
+for(let i=0;i<Task3.length;i++){
+    Task3[i].style.backgroundColor="lightgreen";
+}
+
