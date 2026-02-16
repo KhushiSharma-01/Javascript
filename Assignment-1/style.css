@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #7dd3fc, #34d399);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Layout */
+.dashboard {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-section,
+.events-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+  background: #38bdf8;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* Controls buttons */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.controls button {
+  flex: 1;
+}
+
+/* Event Card */
+.event-card {
+  background: #f1f5f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 5px solid #38bdf8;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  color: #777;
+}
+
+/* Demo section */
+.demo-section {
+  margin-top: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.demo-content {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 6px;
+}
