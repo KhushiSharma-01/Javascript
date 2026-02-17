@@ -39,4 +39,45 @@ myPromise1.then((data)=>{
 
 //last me catch laga do to handle error triple then single catch is sufficient
 
+let myPromise2 =new Promise((resolve,reject)=>{
+    let data = "this is data";  
+    if(data){
+        resolve(data);
+    }  else{
+        reject("error");
+    }
+});
+console.log(myPromise2); 
+
+myPromise2.then((data)=>{
+    console.log(data);
+})
+.catch((error)=>{
+    console.log(error);
+});
+
+
+//fetch function :API call karne ke liye use hota hai. fetch function returns a promise.
+
+let response= fetch("https://jsonplaceholder.typicode.com/posts")
+response.then((robject)=>{ 
+    // console.log(robject);                              // response object in the form of promise
+    robject.json().then((data)=>{
+        console.log(data);             //nested then hai so if it 10 level then so i is a promises hell
+    });
+});
+
+//promises hell
+//promises chaining is solution of callback hell and promises hell
+
+fetch("https://jsonplaceholder.typicode.com/posts")
+.then(robj=>{
+    return robj.json();
+})
+.then(data=>{
+    console.log(data);
+})
+.catch(error=>{
+    console.log(error);
+});
 
